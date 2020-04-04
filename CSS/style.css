@@ -4,4 +4,24 @@
 }
 body{
     background-color: #2a2438;
+    padding: 0 15%;
+}
+
+nav{
+    display: flex;
+    float: right;
+}
+
+nav a{
+    font-size: 18px;
+    margin: 5px 10px;
+    color: blanchedalmond;
+    text-decoration: none;
+    transition: 0.3s;
+    padding-bottom: 2px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    border-bottom: 0.5px solid ; 
 }
