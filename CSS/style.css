@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #2a2438;
     padding: 0 15%;
 }
 
-nav{
+nav {
     display: flex;
     float: right;
 }
 
-nav a{
+nav a {
     font-size: 18px;
     margin: 5px 10px;
     color: blanchedalmond;
@@ -20,8 +21,23 @@ nav a{
     transition: 0.3s;
     padding-bottom: 2px;
     font-weight: 500;
+    position: relative;
 }
 
-nav a:hover{
-    border-bottom: 0.5px solid ; 
+nav a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: cornsilk;
+    transform: scaleX(0);
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+
+nav a:hover::after {
+    transform: scaleX(1);
 }
