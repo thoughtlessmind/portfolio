@@ -6,6 +6,9 @@
 body {
     background-color: #2a2438;
     padding: 0 15%;
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 400;
 }
 
 nav {
@@ -14,7 +17,7 @@ nav {
 }
 
 nav a {
-    font-size: 18px;
+    font-size: 1rem;
     margin: 5px 10px;
     color: blanchedalmond;
     text-decoration: none;
@@ -22,6 +25,7 @@ nav a {
     padding-bottom: 2px;
     font-weight: 500;
     position: relative;
+    padding: 2px 5px;
 }
 
 nav a::after{
