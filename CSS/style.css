@@ -11,9 +11,11 @@ body {
     font-weight: 400;
 }
 
+
+/* -----Navigation bar styles */
 nav {
     display: flex;
-    float: right;
+    flex-direction: row-reverse;
 }
 
 nav a {
@@ -44,4 +46,19 @@ nav a::after{
 
 nav a:hover::after {
     transform: scaleX(1);
+}
+
+
+
+/* ----------- Main contaier styles*/
+.main-container {
+    height: 90vh;
+}
+
+.right-container{
+    text-align: left;
+}
+
+.text-container{
+    align-self: center;
 }
