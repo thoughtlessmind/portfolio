@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #2a2438;
+    /* background-color: #2a2438; */
     padding: 0 15%;
     font-family: 'Montserrat',
     sans-serif;
@@ -14,14 +15,15 @@ body {
 
 /* -----Navigation bar styles */
 nav {
-    display: flex;
-    flex-direction: row-reverse;
+    text-align: right;
+    padding: 10px 0px;
+    height: 10vh;
 }
 
 nav a {
     font-size: 1rem;
     margin: 5px 10px;
-    color: blanchedalmond;
+    color: #484848;
     text-decoration: none;
     transition: 0.3s;
     padding-bottom: 2px;
@@ -37,7 +39,7 @@ nav a::after{
     content: '';
     height: 1px;
     width: 100%;
-    background-color: cornsilk;
+    background-color: #484848;
     transform: scaleX(0);
     transition: 0.5s;
     transform-origin: center;
@@ -52,7 +54,12 @@ nav a:hover::after {
 
 /* ----------- Main contaier styles*/
 .main-container {
-    height: 90vh;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
 }
 
 .right-container{
@@ -61,4 +68,21 @@ nav a:hover::after {
 
 .text-container{
     align-self: center;
+}
+
+.left-image{
+    width: 200px;
+    height: 200px;
+    background-color: palegreen;
+}
+
+
+/* About section */
+
+.about-section{
+    height: 100vh;
+}
+
+.about-section >  h2{
+    padding: 10px 10px 10px 0px;
 }
