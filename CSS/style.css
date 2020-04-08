@@ -58,6 +58,7 @@ nav a {
     font-weight: 500;
     position: relative;
     padding: 2px 5px;
+    cursor: pointer;
 }
 
 nav a::after{
