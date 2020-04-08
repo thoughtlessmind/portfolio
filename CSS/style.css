@@ -6,23 +6,38 @@
 
 body {
     padding: 0 15%;
-    font-family: 'Montserrat',
-    sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    scrollbar-color: rgba(0, 0, 0, .5);
+    scrollbar-track-color: #f1f1f1;
+    ;
 }
 
-/*-------- Custom scroll bar -----*/
+/*-------- Custom scroll bar and selection -----*/
+
+::selection {
+    background-color: grey;
+}
 
 ::-webkit-scrollbar {
-    -webkit-appearance: none;
     width: 7px;
 }
 
+::-webkit-scrollbar:window-inactive{
+}
+
 ::-webkit-scrollbar-thumb {
-    padding: 0 5px;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
 
 
