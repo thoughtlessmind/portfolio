@@ -5,13 +5,13 @@
 }
 
 body {
-    padding: 0 15%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     scrollbar-color: rgba(0, 0, 0, .5);
     scrollbar-track-color: #f1f1f1;
-    ;
 }
+
+
 
 /*-------- Custom scroll bar and selection -----*/
 
@@ -24,7 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar:window-inactive{
-}
+} 
 
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
@@ -42,10 +42,29 @@ body {
 
 
 /* -----Navigation bar styles */
-nav {
+/* nav {
     text-align: right;
     padding: 10px 0px;
     height: 10vh;
+    position: fixed;
+} */
+
+header {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    z-index: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+nav {
+    float: right;
 }
 
 nav a {
@@ -83,7 +102,7 @@ nav a:hover::after {
 
 /* ----------- Main contaier styles*/
 .main-container {
-    height: 87vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +129,8 @@ nav a:hover::after {
 
 .about-section{
     height: 100vh;
+    padding-top: 38.5px;
+    border-bottom: 1px solid grey;
 }
 
 .about-section >  h2{
@@ -117,3 +138,13 @@ nav a:hover::after {
 }
 
 
+/* ----Work section ---- */
+
+#work{
+    height: 100vh;
+    padding-top: 38.5px;
+}
+
+#work >h2 {
+    padding: 10px 10px 10px 0;
+}
