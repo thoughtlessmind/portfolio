@@ -58,6 +58,10 @@ header {
     transition: all ease-in-out 0.5s;
 }
 
+.green-nav{
+    background-color: lawngreen;
+}
+
 header:after {
     content: "";
     display: block;
@@ -147,4 +151,9 @@ nav a:hover::after {
 
 #work >h2 {
     padding: 10px 10px 10px 0;
+}
+
+.inverse{
+    background-color: #111;
+    color: #eee;
 }
