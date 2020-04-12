@@ -105,6 +105,16 @@ nav a:hover::after {
 
 
 /* ----------- Main contaier styles*/
+main{
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section{
+    scroll-snap-align: start;
+}
+
 .main-container {
     height: 100vh;
     display: flex;
