@@ -82,6 +82,9 @@ nav a {
     position: relative;
     padding: 2px 5px;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 nav a::after{
