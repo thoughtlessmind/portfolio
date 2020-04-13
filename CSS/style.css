@@ -107,12 +107,13 @@ nav a:hover::after {
 /* ----------- Main contaier styles*/
 main{
     height: 100vh;
-    overflow: scroll;
+    overflow: scroll; 
     scroll-snap-type: y mandatory;
 }
 
 .section{
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
+    /* Uncomment above to add snap scrolling effect*/
 }
 
 .main-container {
