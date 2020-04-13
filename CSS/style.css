@@ -69,6 +69,7 @@ header:after {
 }
 nav {
     float: right;
+    padding: 0 10%;
 }
 
 nav a {
