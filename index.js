@@ -23,7 +23,7 @@ const sectionOne = document.querySelector(".about-section");
 const observer = new IntersectionObserver(function(entries, observer){
     entries.forEach(entry =>{
         entry.isIntersecting ? header.classList.remove("green-nav") : header.classList.add("green-nav")
-        console.log(entry.target, '-', entry.isIntersecting)
+        // console.log(entry.target, '-', entry.isIntersecting)
     });
 }, options)
 

@@ -23,9 +23,6 @@ body {
     width: 7px;
 }
 
-::-webkit-scrollbar:window-inactive{
-} 
-
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, .5);
@@ -42,12 +39,6 @@ body {
 
 
 /* -----Navigation bar styles */
-/* nav {
-    text-align: right;
-    padding: 10px 0px;
-    height: 10vh;
-    position: fixed;
-} */
 
 header {
     position: fixed;
@@ -128,6 +119,18 @@ main{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid grey;
+}
+
+.name-text{
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-shadow: aqua;
+}
+
+.intro-text{
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 1.2rem;
 }
 
 .right-container{
