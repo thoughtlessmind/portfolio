@@ -109,7 +109,10 @@ main{
 .section{
     /* scroll-snap-align: start; */
     /* Uncomment above to add snap scrolling effect*/
-    margin: 0 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 1200px;
 }
 
 .main-container {
@@ -175,4 +178,10 @@ main{
 .inverse{
     background-color: #111;
     color: #eee;
+}
+
+@media only screen and (max-width: 500){
+    .section{
+        width: 100%;
+    }
 }
