@@ -180,8 +180,20 @@ main{
     color: #eee;
 }
 
-@media only screen and (max-width: 500){
+@media only screen and (max-width: 500px){
     .section{
-        width: 100%;
+        width: 90%;
+    }
+    .main-container{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .name-text{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .intro-text{
+        font-size: 18px;
     }
 }
