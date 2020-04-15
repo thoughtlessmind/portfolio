@@ -15,27 +15,31 @@ body {
 
 /*-------- Custom scroll bar and selection -----*/
 
+@media only screen and (min-width: 600px){
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, .6);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+}
+
 ::selection {
     background-color: grey;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-}
 
-::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, .6);
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
 
 
 /* -----Navigation bar styles */
