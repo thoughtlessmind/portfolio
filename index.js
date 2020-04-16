@@ -1,10 +1,14 @@
-
-const moveToAbout = () =>{
+const moveToAbout = () => {
     document.getElementById('about').scrollIntoView(true)
 }
 
-const moveToWork = () =>{
+const moveToWork = () => {
     document.getElementById('work').scrollIntoView()
+}
+
+const moveToTop = () => {
+    document.getElementById('main-section').scrollIntoView(true)
+    console.log('btn clicked')
 }
 
 
@@ -18,11 +22,25 @@ const header = document.querySelector("header")
 const sections = document.querySelectorAll(".section")
 const mainSection = document.querySelector(".main-container")
 
-const sectionOne = document.querySelector(".about-section");
+const bttWrapper = document.getElementById('bttBtn-wrapper')
 
-const observer = new IntersectionObserver(function(entries, observer){
-    entries.forEach(entry =>{
-        entry.isIntersecting ? header.classList.remove("green-nav") : header.classList.add("green-nav")
+
+
+const sectionOne = document.querySelector(".about-section");
+// bttWrapper.style.display = 'none'
+
+const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            header.classList.remove("green-nav")
+            bttWrapper.style.display = 'none'
+        } else{
+            header.classList.add("green-nav")
+            bttWrapper.style.display = 'block'
+        }
+
+            
         // console.log(entry.target, '-', entry.isIntersecting)
     });
 }, options)

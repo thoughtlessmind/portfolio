@@ -7,8 +7,9 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    scrollbar-color: rgba(0, 0, 0, .5);
-    scrollbar-track-color: #f1f1f1;
+    /* scrollbar-color: rgba(0, 0, 0, .5);
+    scrollbar-track-color: #f1f1f1; */
+    overflow-x: hidden;
 }
 
 
@@ -39,6 +40,29 @@ body {
     background-color: grey;
 }
 
+
+/* ------- back to top btn */
+
+#bttBtn-wrapper{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+#bttBtn{
+    width: 15px;
+    height: 15px;
+    border-radius: 2dpx;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    transform: rotate(45deg);
+    margin: auto;
+    margin-top: 11px;
+}
 
 
 
@@ -116,7 +140,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 .main-container {
