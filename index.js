@@ -34,10 +34,11 @@ const observer = new IntersectionObserver(function (entries, observer) {
 
         if (entry.isIntersecting) {
             header.classList.remove("green-nav")
-            bttWrapper.style.display = 'none'
+            bttWrapper.classList.add("btnWrapperHidden")
+            bttWrapper.classList.remove("btnWrapperShow")
         } else{
             header.classList.add("green-nav")
-            bttWrapper.style.display = 'block'
+            bttWrapper.classList.add("btnWrapperShow")
         }
 
             

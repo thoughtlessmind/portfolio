@@ -53,6 +53,19 @@ body {
     width: 40px;
     cursor: pointer;
 }
+
+.btnWrapperHidden{
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 300ms;
+}
+
+.btnWrapperShow{
+    transform: scale(1);
+    transform-origin: center;
+    transition: 300ms;
+}
+
 #bttBtn{
     width: 15px;
     height: 15px;
