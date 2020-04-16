@@ -56,12 +56,12 @@ body {
 
 .btnWrapperHidden{
     transform: scale(0);
-    transform-origin: bottom;
+    transform-origin: center ;
     transition: 300ms;
 }
 
 .btnWrapperShow{
-    transform: scale(1);
+    transform: scale(1) rotate(360deg);
     transform-origin: center;
     transition: 300ms;
 }
