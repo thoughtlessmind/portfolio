@@ -23,7 +23,12 @@ const sections = document.querySelectorAll(".section")
 const mainSection = document.querySelector(".main-container")
 
 const bttWrapper = document.getElementById('bttBtn-wrapper')
+const veganVideo = document.getElementById('vegan-store-video')
 
+
+veganVideo.onclick = ()=>{
+    window.open("https://thoughtlessmind.github.io/Vegan-store")
+}
 
 
 const sectionOne = document.querySelector(".about-section");
@@ -36,9 +41,12 @@ const observer = new IntersectionObserver(function (entries, observer) {
             header.classList.remove("green-nav")
             bttWrapper.classList.add("btnWrapperHidden")
             bttWrapper.classList.remove("btnWrapperShow")
+            veganVideo.pause()
+            
         } else{
             header.classList.add("green-nav")
             bttWrapper.classList.add("btnWrapperShow")
+            veganVideo.play()
         }
 
             

@@ -9,7 +9,6 @@ body {
     font-weight: 400;
     /* scrollbar-color: rgba(0, 0, 0, .5);
     scrollbar-track-color: #f1f1f1; */
-    overflow-x: hidden;
 }
 
 
@@ -219,6 +218,20 @@ main{
 .inverse{
     background-color: #111;
     color: #eee;
+}
+
+.project-card{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#vegan-store-video{
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 500px){
