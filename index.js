@@ -40,13 +40,10 @@ const observer = new IntersectionObserver(function (entries, observer) {
         if (entry.isIntersecting) {
             header.classList.remove("green-nav")
             bttWrapper.classList.add("btnWrapperHidden")
-            bttWrapper.classList.remove("btnWrapperShow")
-            veganImage.pause()
-            
+            bttWrapper.classList.remove("btnWrapperShow")            
         } else{
             header.classList.add("green-nav")
             bttWrapper.classList.add("btnWrapperShow")
-            veganImage.play()
         }
 
             
