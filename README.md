@@ -1,2 +1,2 @@
 # Portfolio
-Personal portfolio website - https://thoughtlessmind.github.io/portfolio/
+Personal portfolio website - https://thoughtlessmind.netlify.app
