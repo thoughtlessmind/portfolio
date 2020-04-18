@@ -11,6 +11,11 @@ body {
     scrollbar-track-color: #f1f1f1; */
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 
 
 /*-------- Custom scroll bar and selection -----*/
@@ -190,6 +195,21 @@ main{
     background-color: palegreen;
 }
 
+.social-link-container{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-logo{
+    height: 2rem;
+}
+
+.social-link{
+    margin: 0 10px;
+}
+
 
 /* About section */
 
@@ -221,13 +241,13 @@ main{
 }
 
 .project-card{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-radius: 5px;
+    margin-top: 15px;
     transition: 0.3s;
 }
 
@@ -305,5 +325,9 @@ main{
 
     .intro-text{
         font-size: 18px;
+    }
+
+    .project-card{
+        flex-direction: column;
     }
 }
