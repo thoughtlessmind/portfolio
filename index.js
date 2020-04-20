@@ -51,4 +51,4 @@ const observer = new IntersectionObserver(function (entries, observer) {
     });
 }, options)
 
-observer.observe(mainSection)
+observer.observe(mainSection);
