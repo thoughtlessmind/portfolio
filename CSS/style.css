@@ -348,4 +348,9 @@ main{
     .project-card{
         flex-direction: column;
     }
+
+    #work{
+        min-height: fit-content;
+        height: fit-content;
+    }
 }
