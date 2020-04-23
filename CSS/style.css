@@ -329,6 +329,13 @@ main{
 
 
 @media only screen and (max-width: 500px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: none;
+        height: 22px;
+    }
     .section{
         width: 90%;
     }
