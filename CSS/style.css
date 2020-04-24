@@ -1,146 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    /* scrollbar-color: rgba(0, 0, 0, .5);
-    scrollbar-track-color: #f1f1f1; */
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-
-
-/*-------- Custom scroll bar and selection -----*/
-
-@media only screen and (min-width: 600px){
-    ::-webkit-scrollbar {
-        width: 7px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background-color: rgba(0, 0, 0, .5);
-        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: rgba(0, 0, 0, .6);
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-}
-
-::selection {
-    background-color: grey;
-}
-
-
-/* ------- back to top btn */
-
-#bttBtn-wrapper{
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    background-color: grey;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.btnWrapperHidden{
-    transform: scale(0);
-    transform-origin: center ;
-    transition: 300ms;
-}
-
-.btnWrapperShow{
-    transform: scale(1) rotate(360deg);
-    transform-origin: center;
-    transition: 300ms;
-}
-
-#bttBtn{
-    width: 15px;
-    height: 15px;
-    border-radius: 2dpx;
-    border-left: 3px solid;
-    border-top: 3px solid;
-    transform: rotate(45deg);
-    margin: auto;
-    margin-top: 11px;
-}
-
+@import 'global.css';
 
 
 /* -----Navigation bar styles */
-
-header {
-    position: fixed;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px 0;
-    z-index: 1;
-    transition: all ease-in-out 0.5s;
-}
-
-.green-nav{
-    background-color: lawngreen;
-}
-
-header:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-nav {
-    float: right;
-    padding: 0 10%;
-}
-
-nav a {
-    font-size: 1rem;
-    margin: 5px 10px;
-    color: #484848;
-    text-decoration: none;
-    transition: 0.3s;
-    padding-bottom: 2px;
-    font-weight: 500;
-    position: relative;
-    padding: 2px 5px;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
-nav a::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-color: #484848;
-    transform: scaleX(0);
-    transition: 0.5s;
-    transform-origin: center;
-}
-
-
-nav a:hover::after {
-    transform: scaleX(1);
-}
+@import 'navbar.css';
 
 
 
@@ -221,7 +83,7 @@ main{
 }
 
 .social-logo{
-    height: 2rem;
+    font-size: 2rem;
 }
 
 .social-link{
@@ -275,7 +137,14 @@ main{
 
 .left-side-card{
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 145px;
+    height: 145px;
 }
+
+
 
 .project-name{
     margin-bottom: 10px;
@@ -318,6 +187,20 @@ main{
     border-radius: 5px;
 }
 
+.tech-stack-container{
+    display: flex;
+}
+
+.tech-stack{
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #c6c6c6;
+}
+
+.repo-link{
+    margin-left: 20px;
+}
 
 
 

@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    /* scrollbar-color: rgba(0, 0, 0, .5);
+    scrollbar-track-color: #f1f1f1; */
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/*-------- Custom scroll bar and selection -----*/
+
+@media only screen and (min-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, .5);
+        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, .6);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+}
+
+::selection {
+    background-color: rgb(78, 81, 83);
+    color: #fff;
+}
+
+
+/* ------- back to top btn */
+
+#bttBtn-wrapper {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.btnWrapperHidden {
+    transform: scale(0);
+    transform-origin: center;
+    transition: 300ms;
+}
+
+.btnWrapperShow {
+    transform: scale(1) rotate(360deg);
+    transform-origin: center;
+    transition: 300ms;
+}
+
+#bttBtn {
+    width: 15px;
+    height: 15px;
+    border-radius: 2dpx;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    transform: rotate(45deg);
+    margin: auto;
+    margin-top: 11px;
+}
