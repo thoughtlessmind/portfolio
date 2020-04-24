@@ -1,146 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    /* scrollbar-color: rgba(0, 0, 0, .5);
-    scrollbar-track-color: #f1f1f1; */
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-
-
-/*-------- Custom scroll bar and selection -----*/
-
-@media only screen and (min-width: 600px){
-    ::-webkit-scrollbar {
-        width: 7px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background-color: rgba(0, 0, 0, .5);
-        box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: rgba(0, 0, 0, .6);
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-}
-
-::selection {
-    background-color: grey;
-}
-
-
-/* ------- back to top btn */
-
-#bttBtn-wrapper{
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    background-color: grey;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
-}
-
-.btnWrapperHidden{
-    transform: scale(0);
-    transform-origin: center ;
-    transition: 300ms;
-}
-
-.btnWrapperShow{
-    transform: scale(1) rotate(360deg);
-    transform-origin: center;
-    transition: 300ms;
-}
-
-#bttBtn{
-    width: 15px;
-    height: 15px;
-    border-radius: 2dpx;
-    border-left: 3px solid;
-    border-top: 3px solid;
-    transform: rotate(45deg);
-    margin: auto;
-    margin-top: 11px;
-}
-
+@import 'global.css';
 
 
 /* -----Navigation bar styles */
-
-header {
-    position: fixed;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 10px 0;
-    z-index: 1;
-    transition: all ease-in-out 0.5s;
-}
-
-.green-nav{
-    background-color: lawngreen;
-}
-
-header:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-nav {
-    float: right;
-    padding: 0 10%;
-}
-
-nav a {
-    font-size: 1rem;
-    margin: 5px 10px;
-    color: #484848;
-    text-decoration: none;
-    transition: 0.3s;
-    padding-bottom: 2px;
-    font-weight: 500;
-    position: relative;
-    padding: 2px 5px;
-    cursor: pointer;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
-nav a::after{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-color: #484848;
-    transform: scaleX(0);
-    transition: 0.5s;
-    transform-origin: center;
-}
-
-
-nav a:hover::after {
-    transform: scaleX(1);
-}
+@import 'navbar.css';
 
 
 
@@ -175,13 +37,14 @@ main{
 .name-text{
     font-size: 2.8rem;
     font-weight: 500;
-    text-shadow: aqua;
+    color: var(--primary-text-color);
 }
 
 .intro-text{
     padding: 1rem;
     padding-left: 0;
     font-size: 1.2rem;
+    color: var(--para-text-color);
 }
 
 .right-container{
@@ -224,7 +87,8 @@ main{
 }
 
 .social-logo{
-    height: 2rem;
+    font-size: 2rem;
+    color: var(--primary-text-color);
 }
 
 .social-link{
@@ -256,10 +120,11 @@ main{
     padding: 10px 10px 10px 0;
 }
 
-.inverse{
+/* .inverse{
     background-color: #111;
     color: #eee;
-}
+} */
+
 
 .project-card{
     display: flex;
@@ -278,7 +143,14 @@ main{
 
 .left-side-card{
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 145px;
+    height: 145px;
 }
+
+
 
 .project-name{
     margin-bottom: 10px;
@@ -299,7 +171,7 @@ main{
     height: 1px;
     width: 100%;
     background-color: black;
-    transform: scale(1);
+    /* transform: scale(1); */
     transition: 0.3s;
     transform-origin: left;
 }
@@ -321,8 +193,33 @@ main{
     border-radius: 5px;
 }
 
+.tech-stack-container{
+    display: flex;
+}
 
+.tech-stack{
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(198, 198, 198,0.8);
+    transition: 0.3s;
+}
 
+.project-card:hover .tech-stack{
+    color: #6d6d6d
+}
+
+.repo-link{
+    margin-left: 20px;
+}
+
+.repo-logo{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.repo-logo:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
 
 
 
@@ -332,6 +229,13 @@ main{
 
 
 @media only screen and (max-width: 500px){
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: none;
+        height: 22px;
+    }
     .section{
         width: 90%;
     }
@@ -350,5 +254,10 @@ main{
 
     .project-card{
         flex-direction: column;
+    }
+
+    #work{
+        min-height: fit-content;
+        height: fit-content;
     }
 }
