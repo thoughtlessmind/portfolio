@@ -34,13 +34,14 @@ main{
 .name-text{
     font-size: 2.8rem;
     font-weight: 500;
-    text-shadow: aqua;
+    color: var(--primary-text-color);
 }
 
 .intro-text{
     padding: 1rem;
     padding-left: 0;
     font-size: 1.2rem;
+    color: var(--para-text-color);
 }
 
 .right-container{
@@ -84,6 +85,7 @@ main{
 
 .social-logo{
     font-size: 2rem;
+    color: var(--primary-text-color);
 }
 
 .social-link{
@@ -115,10 +117,11 @@ main{
     padding: 10px 10px 10px 0;
 }
 
-.inverse{
+/* .inverse{
     background-color: #111;
     color: #eee;
-}
+} */
+
 
 .project-card{
     display: flex;
@@ -165,7 +168,7 @@ main{
     height: 1px;
     width: 100%;
     background-color: black;
-    transform: scale(1);
+    /* transform: scale(1); */
     transition: 0.3s;
     transform-origin: left;
 }
@@ -195,14 +198,25 @@ main{
     margin-right: 10px;
     font-size: 12px;
     font-weight: 600;
-    color: #c6c6c6;
+    color: rgba(198, 198, 198,0.8);
+    transition: 0.3s;
+}
+
+.project-card:hover .tech-stack{
+    color: #6d6d6d
 }
 
 .repo-link{
     margin-left: 20px;
 }
 
+.repo-logo{
+    color: rgba(0, 0, 0, 0.8);
+}
 
+.repo-logo:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
 
 
 
